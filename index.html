@@ -28,7 +28,7 @@
                   <li><a href="#">Contact</a></li>
                   </li>
                 </ul>
-              </div><!--/.nav-collapse -->
+              </div>
           </nav>
         <div class="container-fluid">
 
@@ -59,20 +59,15 @@
                                 <div class="panel-heading">
                                     Information
                                 </div>
-                                <div class="panel-body">
+                                <div class="panel-body" id="info">
                                     <p>
                                         Name: <br>
                                         Address: <br>
                                         Price: <br>
-                                        Distance:
+                                        Distance: <br>
+                                        Score: <br>
+                                        <svg id="score"></svg>
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    Here is a D3 graph
                                 </div>
                             </div>
                         </div>
@@ -82,6 +77,7 @@
                     <div id="map"></div>
                 </div>
             </div>
+            <!-- footer 
             <div class="row" id="footer">
                 <div class="col-sm-8">
                     
@@ -89,16 +85,23 @@
                 <div class="col-sm-4">
                     
                 </div>
-            </div>
+            </div>-->
         </div>
-         <!-- /container -->
+  
+    <!-- Google Map API Script -->
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB24ELBke4ttVaw3eWpsfu6yeCKXLNIc8&callback=initMap">
     </script>
+    <!-- D3.js scripts-->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="js/draw.aster.js"></script>
+    <!-- Scripts run on initializtion-->
     <script src="js/init.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap scripts-->
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </body>
 </html>
