@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Livin' Lafayette</title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body style="background-color: #f0f4f4;">
@@ -33,7 +32,7 @@
         <div class="container-fluid">
 
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-3">
                     <div class="panel panel-default panel-main">
                         <div class="panel-heading">
                             Side Panel
@@ -46,11 +45,13 @@
                                 <div class="panel-body">
                                     <p>Use the sliders below to set the weight of each metric and choose what matters to you</p>
                                     <h5>Cost</h5>
-                                    <input id="metric1" type="range" min="0" max="100" step="1">
+                                    <input id="Cost" type="range" min="0" max="100" step="1">
                                     <h5>Distance from Location X</h5>
-                                    <input id="metric2" type="range" min="0" max="100" step="1">
+                                    <input id="distance" type="range" min="0" max="100" step="1">
                                     <h5>User Ratings</h5>
-                                    <input id="metric3" type="range" min="0" max="100" step="1">
+                                    <input id="user-rating" type="range" min="0" max="100" step="1">
+                                    <h5>Crime</h5>
+                                    <input id="crime" type="range" min="0" max="100" step="1">
                                 </div>
                             </div>
                         </div>
@@ -73,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-md-9">
                     <div id="map"></div>
                 </div>
             </div>
@@ -96,10 +97,10 @@
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="js/draw.aster.js"></script>
-    <!-- Scripts run on initializtion-->
-    <script src="js/init.js"></script>
+    <!-- Google Maps -->
+    <script src="js/maps.js"></script>
     <!-- Bootstrap scripts-->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
