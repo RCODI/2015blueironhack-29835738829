@@ -1,5 +1,5 @@
-var width = 500,
-    height = 500,
+var width = getElementById('chart-container').offsetWidth,
+    height = width,
     radius = Math.min(width, height) / 2,
     innerRadius = 0.3 * radius;
 
@@ -24,7 +24,7 @@ var outlineArc = d3.svg.arc()
         .innerRadius(innerRadius)
         .outerRadius(radius);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#chart")
     .attr("width", width)
     .attr("height", height)
     .append("g")
@@ -32,7 +32,7 @@ var svg = d3.select("body").append("svg")
 
 svg.call(tip);
 
-d3.csv('aster_data.csv', function(error, data) {
+d3.csv('../data/aster_data.csv', function(error, data) {
 
   data.forEach(function(d) {
     d.id     =  d.id;
