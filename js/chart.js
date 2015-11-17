@@ -1,5 +1,5 @@
-var width = document.getElementById('info').offsetWidth * .9,
-    height = width,
+var width = 500,
+    height = 500,
     radius = Math.min(width, height) / 2,
     innerRadius = 0.3 * radius;
 
@@ -24,7 +24,7 @@ var outlineArc = d3.svg.arc()
         .innerRadius(innerRadius)
         .outerRadius(radius);
 
-var svg = d3.select("#score")
+var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
     .append("g")

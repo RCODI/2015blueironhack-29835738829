@@ -1,24 +1,19 @@
 html, body {
+  background-color: #f0f4f4;
   height: 100%;
 }
 
+.main-panel {
+  height: 90vh;
+}
+
 .panel-main {
-    height: 100vh;
+    height: 100%;
 }
 
 #map {
     height: 100%;
     width: 100%;
-}
-
-#footer {
-    margin-top: 20px;
-    height: 20em;
-    position: relative;
-    overflow: hidden;
-    background-color: #2b252c;
-    color: #fff;
-    bottom: 0;
 }
 
 /************ Aster Plot Styles ************/
