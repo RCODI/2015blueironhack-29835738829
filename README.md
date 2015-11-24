@@ -4,6 +4,3 @@ This is my second submission for the 2015 Blue Ironhack. It has been tested in G
 
 ##Keywords
 IronHack, D3.js, HTML5, CSS3, Bootstrap, Data.gov, Cliamte Data Online, JavaScript, safe, green, resident, apartment, Lafayette, Indiana, Purdue
-
-##Author
-Marlo Delatorre (mtorre0157)
